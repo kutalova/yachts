@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
+
+$primary: #77C9F9;
+$navbar-light-color: $primary;
+$navbar-dark-color: $primary;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import '~bootstrap/scss/bootstrap';

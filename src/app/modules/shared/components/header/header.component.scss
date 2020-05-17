@@ -1,0 +1,40 @@
+.navbar {
+  padding: 20px 12px 0;
+}
+
+.logo,
+.phone {
+  height: 36px;
+}
+
+.number,
+.add_yacht {
+  display: none;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link,
+{
+  color: black;
+  padding: .15rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .number,
+  .add_yacht {
+    display: block;
+  }
+  .phone_wrapper {
+    display: flex;
+  }
+  .phone {
+    height: 20px;
+  }
+  .number {
+    font-size: 20px;
+  }
+}
