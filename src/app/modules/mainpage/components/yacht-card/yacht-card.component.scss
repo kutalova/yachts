@@ -1,0 +1,44 @@
+@import "_colors";
+
+.card_wrapper {
+  width: 95%;
+  max-width: 372px;
+  color: $beigetext;
+  font-size: 14px;
+}
+
+.card_headline {
+  font-size: 22px;
+  color: #010B1C;
+}
+.card_full_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px $beigetext solid;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.card_short_info {
+  display: flex;
+}
+
+.short_info {
+  flex-basis: 35px;
+  padding-left: 23px;
+  margin-right: 13px;
+}
+
+.people {
+  background: url("/assets/images/icons/person.svg") no-repeat left center;
+}
+
+.beds {
+  background: url("/assets/images/icons/bed.svg") no-repeat left center;
+}
+
+.showers {
+  background: url("/assets/images/icons/bath.svg") no-repeat left center;
+}
