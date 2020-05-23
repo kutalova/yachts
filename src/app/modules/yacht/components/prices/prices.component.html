@@ -1,10 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<h2>Цены</h2>
+<article class="prices_container add_expenses">
+  <div class="p_row">
+    <div class="p_title p_col">
+      Дополнительные услуги
+    </div>
+    <div class=" p_col">
+      Стоимость
+    </div>
 
-</body>
-</html>
+  </div>
+  <div class="p_row">
+    <div class="p_title p_col">
+      Skipper food (of the skipper is extra)
+    </div>
+    <div class="per_week  p_col" *ngIf="true">
+      за неделю
+    </div>
+    <div class="p_col p_price">
+      €1330
+    </div>
+  </div>
+  <div class="p_row">
+    <div class="p_title p_col">
+      Extra linen (per set)
+    </div>
+    <div class=" p_col">
+    </div>
+    <div class="p_col p_price">
+      €5
+    </div>
+  </div>
+</article>
+<article class="prices_container obl_expenses">
+  <div class="p_row">
+    <div class="p_title p_col">Обязательные расходы</div>
+    <div class="p_col">Стоимость</div>
+  </div>
+  <div class="p_row">
+    <div class="p_title p_col">
+      Standart charter pack [final cleaning, bed sheets
+      & towels (one set per person), first fill for outboard
+      engine, spare bottle of gas]
+    </div>
+    <div class="p_col p_price">€250</div>
+  </div>
+</article>
