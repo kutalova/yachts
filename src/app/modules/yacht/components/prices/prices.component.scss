@@ -3,7 +3,6 @@
 .prices_container {
   width: 95%;
   margin: 20px auto 0;
-  max-width: 768px;
   padding: 20px;
   font-size: 13px;
   font-family: Arial, sans-serif;
@@ -17,6 +16,7 @@
   flex-flow: row;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
   padding: 20px 0 10px;
   border-bottom: 1px solid $grey-dark;
 
@@ -25,25 +25,40 @@
   }
 }
 
-.p_col {
-  &.per_week {
-    color: $grey-light;
-    min-width: 65px;
-    margin: 0 10px 0 6px;
-  }
+.per_week {
+  color: $grey-light;
+  min-width: 65px;
+  margin: 0 10px 0 6px;
+}
 
-  &.p_price {
-    flex-basis: 35px;
-    text-align: right;
-  }
+.p_price {
+  flex-basis: 45px;
+  text-align: right;
 }
 
 .p_title {
   flex: 2 0 0;
+  max-width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .prices_container {
+    max-width: 616px;
+    padding: 22px 40px;
+    font-size: 16px;
+  }
+  .p_row {
+    padding-top: 24px;
+  }
+  .per_week {
+    margin: 0 40px 0 6px;
+  }
 }
 
 @media screen and (min-width: 1208px) {
   .prices_container {
+    max-width: 768px;
     padding: 32px 52px;
+    font-size: 20px;
   }
 }

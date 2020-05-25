@@ -6,6 +6,9 @@ $primary: #77C9F9;
 $navbar-light-color: $primary;
 $navbar-dark-color: $primary;
 
+h2 {
+  font-family: Roboto, Arial, sans-serif;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import '~bootstrap/scss/bootstrap';
