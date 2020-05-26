@@ -1,0 +1,17 @@
+@import "_colors";
+
+.headline {
+  font-size: 14px;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+.crumbs {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10px;
+  margin: 6px 0;
+}
+.current_page {
+  color: $grey-light;
+}

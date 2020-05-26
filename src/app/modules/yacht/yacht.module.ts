@@ -9,15 +9,19 @@ import {InfoComponent} from './components/info/info.component';
 import {PricesComponent} from './components/prices/prices.component';
 import {SeeMoreComponent} from './components/see-more/see-more.component';
 import {YachtComponent} from './components/yacht/yacht.component';
+import {BookDatePickerComponent} from './components/book-date-picker/book-date-picker.component';
+import {BreadcrumbComponent} from './components/breadcrumbs/breadcrumb.component';
 
 
 @NgModule({
   declarations: [
+    BreadcrumbComponent,
     GalleryComponent,
     GearComponent,
     InfoComponent,
     PricesComponent,
     SeeMoreComponent,
+    BookDatePickerComponent,
     YachtComponent
   ],
   imports: [

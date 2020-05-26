@@ -1,0 +1,12 @@
+@import "_colors";
+.date_picker_wrapper {
+  width: 278px;
+  border: 1px solid $grey-dark;
+  border-radius: 3px;
+  padding: 18px 40px;
+}
+.place_wrapper {
+  background: url('/assets/images/icons/geotag.svg') no-repeat left center;
+  padding-left: 35px;
+font-size: 14px;
+}

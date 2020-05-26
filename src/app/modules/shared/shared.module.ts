@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {RouterModule} from '@angular/router';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbDate, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
@@ -22,6 +22,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
   exports: [
     HeaderComponent,
     FooterComponent,
+    FormsModule,
+    NgbModule,
+    ReactiveFormsModule,
   ]
 })
 export class SharedModule {

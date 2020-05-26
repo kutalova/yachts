@@ -1,0 +1,49 @@
+@import "_colors";
+
+.person {
+  background: url('/assets/images/icons/guests.svg') no-repeat top center;
+}
+.fridge {
+  background: url('/assets/images/icons/fridge.svg') no-repeat top center;
+}
+.toilet {
+  background: url('/assets/images/icons/toilet.svg') no-repeat top center;
+}
+.calendar {
+  background: url('/assets/images/icons/calendar.svg') no-repeat top center;
+}
+.gear {
+  background: url('/assets/images/icons/gear.svg') no-repeat top center;
+}
+.arrow {
+  background: url('/assets/images/icons/arrow.svg') no-repeat top center;
+}
+.blop {
+  background: url('/assets/images/icons/blop.svg') no-repeat top center;
+}
+.canister {
+  background: url('/assets/images/icons/canister.svg') no-repeat top center;
+}
+.wheel {
+  background: url('/assets/images/icons/wheel.svg') no-repeat top center;
+}
+
+.icons_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  width: 40px;
+  display: flex;
+  flex-flow: column;
+  padding-top: 30px;
+  font-size: 7px;
+  font-family: Arial, sans-serif;
+  color: $black;
+  text-align: center;
+}
+
+.blueprint_wrapper {
+  margin: 22px auto;
+  text-align: center;
+}
