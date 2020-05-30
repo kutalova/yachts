@@ -6,13 +6,17 @@ import {YachtCardComponent} from './components/yacht-card/yacht-card.component';
 import {NgModule} from '@angular/core';
 import {SharedModule} from '../shared/shared.module';
 import {MainpageRoutingModule} from './mainpage.routing.module';
+import {MainpageComponent} from './components/mainpage/mainpage.component';
+import {ContactsComponent} from './components/banner/contacts/contacts.component';
 
 
 @NgModule({
   declarations: [
     BannerComponent,
     OffersGridComponent,
-    YachtCardComponent
+    YachtCardComponent,
+    MainpageComponent,
+    ContactsComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,9 @@ import {MainpageRoutingModule} from './mainpage.routing.module';
   exports: [
     BannerComponent,
     OffersGridComponent,
-    YachtCardComponent
+    YachtCardComponent,
+    MainpageComponent,
+    ContactsComponent
   ]
 })
 export class MainpageModule {

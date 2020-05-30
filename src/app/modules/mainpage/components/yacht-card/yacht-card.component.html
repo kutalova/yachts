@@ -1,9 +1,9 @@
-<section class="card_wrapper">
-  <h2 class="card_headline">{{yacht.name}}</h2>
-  <div class="card_picture">
-    <img [src]="yacht.img" alt=""/>
+<section class="y_card_wrapper">
+  <h2 class="y_card_headline">{{yacht.name}}</h2>
+  <div>
+    <img class="y_card_picture" [src]="yacht.img" alt=""/>
   </div>
-  <div class="card_full_info">
+  <div class="y_card_full_info">
     <div class="type_wrapper info">
       <p>Тип:</p>
       <p>{{yacht.type}}</p>
@@ -17,7 +17,7 @@
       <p>{{yacht.price_per_day}}</p>
     </div>
   </div>
-  <div class="card_short_info">
+  <div class="y_card_short_info">
     <div class="people short_info">{{yacht.capacity}}</div>
     <div class="beds short_info">{{yacht.beds}}</div>
     <div class="showers short_info">{{yacht.showers}}</div>

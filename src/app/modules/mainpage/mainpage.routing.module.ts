@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {OffersGridComponent} from './components/offers-grid/offers-grid.component';
+import {MainpageComponent} from './components/mainpage/mainpage.component';
 
 const routes: Routes = [{
-  path: '', component: OffersGridComponent
+  path: '', component: MainpageComponent
 }];
 
 @NgModule({

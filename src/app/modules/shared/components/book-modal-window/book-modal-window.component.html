@@ -1,0 +1,46 @@
+<div class="book_window_wrapper">
+  <p class="headline">Забронировать</p>
+  <form [formGroup]="form" class="modal_window_form">
+    <div class="form-group">
+      <label for="name">ваше имя</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="form-group">
+      <label for="phone">ваш телефон</label>
+      <input type="text" class="form-control" id="phone" formControlName="phone">
+    </div>
+    <div class="form-group">
+      <label for="email">ваш email</label>
+      <input type="email" class="form-control" id="email" formControlName="email">
+    </div>
+    <div class="form-group">
+      <label for="guests">количество гостей</label>
+      <input type="text" class="form-control" id="guests" formControlName="guests">
+    </div>
+    <div class="form-group">
+      <label for="date"></label>
+      <div class="input-group">
+        <div class="input-group-append">
+          <ngb-datepicker id="date" formControlName="date" #dp (dateSelect)="onDateSelection($event)" [dayTemplate]="t"
+                          outsideDays="hidden">
+          </ngb-datepicker>
+        </div>
+
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-lg w-100 btn-primary text-white text-uppercase">отправить</button>
+  </form>
+</div>
+
+<ng-template #t let-date let-focused="focused">
+  <span class="custom-day"
+        [class.focused]="focused"
+        [class.range]="isRange(date)"
+        [class.faded]="isHovered(date) || isInside(date)"
+        (mouseenter)="hoveredDate = date"
+        (mouseleave)="hoveredDate = null">
+    {{ date.day }}
+  </span>
+</ng-template>
+

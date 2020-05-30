@@ -1,0 +1,26 @@
+@import 'colors.scss';
+
+
+.y_contacts {
+  background: $turquoise;
+  width: 95%;
+  text-align: center;
+  color: $white;
+  margin: 50px auto;
+}
+.y_contacts_down, .y_contacts_upper {
+  padding-top: 30px;
+  height: 110px;
+}
+
+.y_contacts_upper {
+  border-bottom: 1px solid $turquoise-dark;
+}
+
+.social_link {
+  width: 38px;
+  display: inline-block;
+  img {
+    width: 26px;
+  }
+}

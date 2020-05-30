@@ -1,28 +1,47 @@
 @import "_colors";
 
-.card_wrapper {
-  width: 95%;
+.y_card_wrapper {
   max-width: 372px;
   color: $beigetext;
   font-size: 14px;
+  margin-top: 25px;
 }
 
-.card_headline {
+.y_card_headline {
   font-size: 22px;
   color: #010B1C;
 }
-.card_full_info {
+
+.y_card_picture {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.y_card_full_info {
   display: flex;
   justify-content: space-between;
   padding: 7px 0;
+  margin-bottom: 8px;
   border-bottom: 1px $beigetext solid;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+
   p {
     margin: 0;
     padding: 0;
   }
 }
-.card_short_info {
+
+.y_card_short_info {
   display: flex;
+  font-size: 12px;
+}
+
+.hour_rate_wrapper {
+  border-left: 1px solid $beigetext;
+  border-right: 1px solid $beigetext;
+  padding: 0 1em;
 }
 
 .short_info {

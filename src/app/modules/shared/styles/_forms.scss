@@ -1,0 +1,12 @@
+@import "src/assets/styles/colors";
+.headline {
+  font-size: 22px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal_window_form {
+  text-transform: uppercase;
+  color: $grey-light
+}

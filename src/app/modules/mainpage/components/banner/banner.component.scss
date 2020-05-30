@@ -1,0 +1,38 @@
+.y_banner {
+  display: grid;
+}
+
+.y_banner_back, .y_banner_text {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+
+.y_banner_pic {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+
+.y_banner_text {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #FFF;
+}
+
+.y_sidenote {
+  transform: rotate(-90deg);
+  font-size: 10px;
+}
+.y_welcome {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-size: 20px;
+}
+.y_options {
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+
+}

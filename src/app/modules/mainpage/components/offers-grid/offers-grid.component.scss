@@ -1,8 +1,14 @@
-.cards_wrapper {
+.y_cards_grid_wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 10px;
 }
-.card {
+.y_card {
   flex-grow: 1;
-  width: 33%;
+  width: 95%;
+}
+@media screen and (min-width: 1200px){
+  .y_card {
+    width: 33%;
+  }
 }
