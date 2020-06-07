@@ -1,4 +1,4 @@
-<section class="y_card_wrapper">
+<a class="y_card_wrapper" [routerLink]="['yacht',yacht.id]">
   <h2 class="y_card_headline">{{yacht.name}}</h2>
   <div>
     <img class="y_card_picture" [src]="yacht.img" alt=""/>
@@ -22,4 +22,4 @@
     <div class="beds short_info">{{yacht.beds}}</div>
     <div class="showers short_info">{{yacht.showers}}</div>
   </div>
-</section>
+</a>

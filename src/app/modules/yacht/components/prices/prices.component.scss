@@ -5,7 +5,6 @@
   margin: 20px auto 0;
   padding: 20px;
   font-size: 13px;
-  font-family: Arial, sans-serif;
   color: $black;
   border: 1px solid $grey-dark;
   border-radius: 3px;
@@ -52,6 +51,9 @@
   }
   .per_week {
     margin: 0 40px 0 6px;
+  }
+  .add_expenses {
+    margin-top: 65px;
   }
 }
 

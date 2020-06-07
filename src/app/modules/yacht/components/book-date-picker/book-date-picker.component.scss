@@ -1,12 +1,67 @@
 @import "_colors";
+
+.form-group.hidden {
+  width: 0;
+  margin: 0;
+  border: none;
+  padding: 0;
+
+  * {
+    border: none;
+    height: 0;
+  }
+}
+
 .date_picker_wrapper {
   width: 278px;
   border: 1px solid $grey-dark;
   border-radius: 3px;
-  padding: 18px 40px;
+  padding: 18px 39px;
+  margin: 0 auto;
 }
+
+.y_form_group {
+  width: 266px;
+}
+
+.calendar {
+  background: url('/assets/images/icons/calendar_2.svg') $white no-repeat;
+  background-size: 26px 26px;
+  background-position: 21px;
+  border: 1px solid $grey-light;
+  border-right: none;
+  width: 67px;
+}
+
 .place_wrapper {
   background: url('/assets/images/icons/geotag.svg') no-repeat left center;
   padding-left: 35px;
-font-size: 14px;
+  font-size: 14px;
+  min-height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.y_choose_date_tip {
+  font-size: 12px;
+  padding: 10px 20px 25px;
+}
+
+.date-picker_input {
+  border: 1px solid $grey-light;
+  border-radius: 0;
+  border-left: none;
+  font-size: 14px;
+  color: $grey-light;
+  height: 40px;
+  width: 200px;
+  padding: 6px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .date_picker_wrapper {
+    width: 340px;
+    height: 276px;
+    padding: 38px;
+  }
 }

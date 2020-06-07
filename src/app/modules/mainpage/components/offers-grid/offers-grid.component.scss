@@ -1,14 +1,75 @@
+@import 'colors.scss';
+
+.current_filter {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.current {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.best_offer {
+  font-size: 20px;
+  margin: 0;
+}
+
 .y_cards_grid_wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 0 10px;
+  justify-content: center;
 }
+
 .y_card {
   flex-grow: 1;
   width: 95%;
+  max-width: 370px;
 }
-@media screen and (min-width: 1200px){
+
+.y_btn_all {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .current_filter {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+  }
+  .y_cards_grid_wrapper {
+    padding: 0;
+    justify-content: space-between;
+  }
   .y_card {
-    width: 33%;
+    width: 345px;
+    flex-grow: 0;
+  }
+  .y_btn_all {
+    width: 155px;
+    text-transform: none;
+    font-size: 16px;
+    height: 36px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .y_card {
+    width: 370px;
+  }
+  .current_filter {
+    height: 45px;
+  }
+  .current {
+    text-transform: uppercase;
+  }
+  .y_btn_all {
+    height: 44px;
+    font-size: 22px;
+    width: 230px;
   }
 }

@@ -1,3 +1,12 @@
 .yacht_details {
   padding: 16px 12px 60px;
 }
+
+@media screen and (min-width: 768px) {
+  .yacht_details {
+    padding: 23px 28px 53px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+}

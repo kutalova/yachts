@@ -1,4 +1,12 @@
-<div class="y_cards_grid_wrapper" >
+<div class="current_filter y_container">
+  <div class="filters_wrapper">
+    <a class="current text-primary">моторные и парусные яхты</a>
+    <h2 class="best_offer">Лучшие предложения</h2>
+  </div>
+  <button class="btn bg-primary y_btn_all text-white">Посмотреть все</button>
+</div>
+
+<div class="y_cards_grid_wrapper y_container" >
   <div class="y_card" *ngFor="let yacht of yachts">
     <app-yacht-card  [yacht]="yacht"></app-yacht-card>
   </div>

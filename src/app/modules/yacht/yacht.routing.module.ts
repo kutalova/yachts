@@ -1,11 +1,13 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {YachtComponent} from './components/yacht/yacht.component';
+import {PricesComponent} from './components/prices/prices.component';
 
 const routes: Routes = [
+
   {
-  path: '', component: YachtComponent
-}
+    path: '', component: YachtComponent
+  }
 ];
 
 @NgModule({

@@ -1,5 +1,12 @@
+@import 'colors.scss';
+
 .navbar {
-  padding: 20px 12px 0;
+  padding: 20px 12px;
+}
+
+.navbar-collapse {
+  position: absolute;
+  right: 0;
 }
 
 .logo,
@@ -17,24 +24,75 @@
   padding: 0;
 }
 
-.navbar-light .navbar-nav .nav-link,
-{
-  color: black;
+.navbar-light .navbar-nav .nav-link {
+  color: $black;
   padding: .15rem 0;
 }
 
 @media screen and (min-width: 768px) {
+
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar {
+    height: 72px;
+    padding: 20px 0;
+  }
   .number,
   .add_yacht {
     display: block;
   }
+  .add_yacht {
+    font-size: 16px;
+  }
   .phone_wrapper {
     display: flex;
+    align-items: center;
   }
   .phone {
     height: 20px;
   }
   .number {
     font-size: 20px;
+  }
+  .y_nav_items {
+    display: inline-block;
+    position: initial;
+    max-width: 254px;
+
+    .navbar-nav {
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .y_nav_items {
+    max-width: 530px;
+  }
+  .navbar {
+    padding: 14px 0;
+    height: 90px;
+  }
+  .navbar-light .navbar-nav .nav-link,
+  .number {
+    font-size: 36px;
+  }
+  .add_yacht {
+    font-size: 22px;
+    width:190px;
+  }
+  .logo {
+    height: 65px;
+  }
+  .phone {
+    height: 32px;
+  }
+  .text-dark {
+    padding-left: 10px;
   }
 }

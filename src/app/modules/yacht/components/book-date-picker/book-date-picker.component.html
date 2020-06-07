@@ -1,23 +1,51 @@
 <div class="date_picker_wrapper">
   <div class="place_wrapper">Алимос Марина, Греция</div>
   <form class="form-inline">
-    <div class="form-group">
+    <div class="form-group hidden">
+      <div class="input-group">
+        <input name="datepicker"
+               class="form-control"
+               ngbDatepicker
+               #datepicker="ngbDatepicker"
+               [autoClose]="'outside'"
+               (dateSelect)="onDateSelection($event)"
+               [displayMonths]="1"
+               [dayTemplate]="t"
+               outsideDays="hidden"
+               [startDate]="fromDate!">
+        <ng-template #t let-date let-focused="focused">
+        <span class="custom-day"
+              [class.focused]="focused"
+              [class.range]="isRange(date)"
+              [class.faded]="isHovered(date) || isInside(date)"
+              (mouseenter)="hoveredDate = date"
+              (mouseleave)="hoveredDate = null">
+          {{ date.day }}
+        </span>
+        </ng-template>
+      </div>
+    </div>
+    <div class="form-group y_form_group">
       <div class="input-group">
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+          <button class="btn btn-outline-secondary calendar" (click)="datepicker.toggle()" type="button"></button>
         </div>
-        <input class="form-control" placeholder="yyyy-mm-dd"
-               name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+        <input #dpFromDate
+               class="form-control date-picker_input" placeholder="yyyy-mm-dd"
+               name="dpFromDate"
+               [value]="formatter.format(fromDate) +' &mdash; '+ formatter.format(toDate)"
+               (input)="fromDate = validateInput(fromDate, dpFromDate.value)">
+
       </div>
     </div>
   </form>
   <div class="form-row">
-      <div class="col font-weight-bold">
+      <div class="col font-weight-bold y_choose_date_tip">
         Выберите желаемую дату вашего путешествия
       </div>
   </div>
   <div class="form-row">
-    <button class="btn btn-lg bg-primary text-white">Забронировать</button>
+    <button class="btn btn-lg bg-primary text-white w-100 text-uppercase">Забронировать</button>
 
   </div>
 

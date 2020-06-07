@@ -1,10 +1,11 @@
 @import "_colors";
 
 .y_card_wrapper {
-  max-width: 372px;
   color: $beigetext;
   font-size: 14px;
   margin-top: 25px;
+  display: block;
+  cursor: pointer;
 }
 
 .y_card_headline {
@@ -25,7 +26,7 @@
   margin-bottom: 8px;
   border-bottom: 1px $beigetext solid;
   font-size: 12px;
-  font-family: Arial, sans-serif;
+  //font-family: Roboto, Arial, sans-serif;
 
   p {
     margin: 0;
@@ -60,4 +61,23 @@
 
 .showers {
   background: url("/assets/images/icons/bath.svg") no-repeat left center;
+}
+
+@media screen and (min-width: 768px) {
+
+  .y_card_full_info,
+  .y_card_short_info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .y_card_wrapper {
+    margin-top: 45px;
+  }
+  .y_card_full_info,
+  .y_card_short_info {
+    font-size: 16px;
+  }
 }

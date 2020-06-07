@@ -10,6 +10,7 @@ export class OffersGridComponent implements OnInit {
 
   yachts: YachtCardInterface[] = [
     {
+      id: 1,
       name: 'Beneteau 43',
       img: '/assets/images/yacht1.png',
       type: 'Парусные яхты',
@@ -19,6 +20,7 @@ export class OffersGridComponent implements OnInit {
       beds: '8+2',
       showers: 2
     },     {
+      id: 2,
       name: 'Beneteau 43',
       img: '/assets/images/yacht1.png',
       type: 'Парусные яхты',
@@ -28,6 +30,7 @@ export class OffersGridComponent implements OnInit {
       beds: '8+2',
       showers: 2
     },    {
+      id: 14,
       name: 'Beneteau 43',
       img: '/assets/images/yacht1.png',
       type: 'Парусные яхты',
@@ -37,6 +40,7 @@ export class OffersGridComponent implements OnInit {
       beds: '8+2',
       showers: 2
     },    {
+      id: 19,
       name: 'Beneteau 43',
       img: '/assets/images/yacht1.png',
       type: 'Парусные яхты',
@@ -46,6 +50,7 @@ export class OffersGridComponent implements OnInit {
       beds: '8+2',
       showers: 2
     },    {
+      id: 16,
       name: 'Beneteau 43',
       img: '/assets/images/yacht1.png',
       type: 'Парусные яхты',
@@ -55,6 +60,7 @@ export class OffersGridComponent implements OnInit {
       beds: '8+2',
       showers: 2
     },    {
+      id: 13,
       name: 'Beneteau 43',
       img: '/assets/images/yacht1.png',
       type: 'Парусные яхты',

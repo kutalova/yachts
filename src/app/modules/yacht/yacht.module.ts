@@ -31,6 +31,14 @@ import {BreadcrumbComponent} from './components/breadcrumbs/breadcrumb.component
     SharedModule
   ],
   exports: [
+    BreadcrumbComponent,
+    GalleryComponent,
+    GearComponent,
+    InfoComponent,
+    PricesComponent,
+    SeeMoreComponent,
+    BookDatePickerComponent,
+    YachtComponent
   ]
 })
 export class YachtModule {
