@@ -4,6 +4,7 @@ import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {RouterModule} from '@angular/router';
 import {NgbDate, NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BookModalWindowComponent} from './components/book-modal-window/book-modal-window.component';
 import { AddYachtModalWindowComponent } from './components/add-yacht-modal-window/add-yacht-modal-window.component';
@@ -21,6 +22,7 @@ import { AddYachtModalWindowComponent } from './components/add-yacht-modal-windo
     RouterModule,
     FormsModule,
     NgbModule,
+    NgxGalleryModule,
     ReactiveFormsModule,
   ],
   exports: [
@@ -28,6 +30,7 @@ import { AddYachtModalWindowComponent } from './components/add-yacht-modal-windo
     FooterComponent,
     FormsModule,
     NgbModule,
+    NgxGalleryModule,
     ReactiveFormsModule,
     BookModalWindowComponent,
     AddYachtModalWindowComponent,
