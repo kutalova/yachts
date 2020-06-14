@@ -5,8 +5,8 @@
 .y_banner_back, .y_banner_text {
   grid-column: 1;
   grid-row: 1;
+  width: 100%;
 }
-
 
 .y_banner_pic {
   width: 95%;
@@ -17,46 +17,48 @@
 .y_banner_text {
   color: #FFF;
 
-  .y_sidenote,
-  .y_welcome {
-    font-family: 'Montserrat', Arial, sans-serif !important;
-  }
-
   &.mobile {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 25% 50% 25%;
+
     .y_sidenote {
-      transform: rotate(-90deg);
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-column-end: 1;
       font-size: 10px;
+      align-self: center;
+      margin-left: -50px;
+    }
+
+    .rotate {
+      transform: rotate(-90deg);
+      display: inline-block;
+      white-space: pre;
     }
 
     .y_welcome {
-      padding: 0;
-      margin: 0;
+      max-width: 305px;
       text-align: right;
       font-size: 20px;
+      margin-left: auto;
+      padding-right: 5%;
+      grid-row-start: 3;
+      grid-column-start: 1;
+      grid-row-end: 4;
+      grid-column-end: 4;
+      align-self: center;
     }
 
     .y_options {
-      text-align: center;
+      margin: 0 auto;
+      font-size: 8px;
+      grid-row-start: 3;
+      grid-column-start: 2;
+      align-self: end;
+      padding-bottom: 15%;
+      position: relative;
     }
-
-  }
-
-  .y_options::before,
-  .y_options::after {
-    width: 28px;
-    content: "";
-    height: 1px;
-    border-bottom: 1px solid white;
-    display: block;
-    position: absolute;
-  }
-
-  .y_options::before {
-    //margin: 15px 0 0 -55px;
-  }
-
-  .y_options::after {
-    //margin: -15px 0 20px 245px;
   }
 
   &.desktop {
@@ -64,14 +66,33 @@
   }
 }
 
+.rotate,
+.y_welcome {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+}
 
-@media screen and (min-width: 768px) {
-  .y_banner {
-    z-index: 0;
-    position: relative;
-  }
+.y_options::before,
+.y_options::after {
+  width: 28px;
+  content: "";
+  height: 1px;
+  border-bottom: 1px solid white;
+  display: block;
+  position: relative;
+}
+
+.y_options::before {
+  top: 6px;
+  left: -35px;
+}
+
+.y_options::after {
+  top: -7px;
+  right: -108%;
+}
+
+@media screen and (min-width: 500px) {
   .y_banner_text {
-
     &.mobile {
       display: none;
     }
@@ -83,35 +104,48 @@
       width: 95%;
       padding: 60px 30px;
     }
+  }
+  .y_sidenote {
+    font-size: 16px;
+  }
 
-    .y_sidenote {
-      font-size: 16px;
-    }
+  .y_welcome {
+    font-size: 21px;
+    margin: 18px 0 32px;
+    letter-spacing: 1px;
+    max-width: 350px;
 
-    .y_welcome {
-      font-size: 21px;
-      margin: 18px 0 32px;
-      letter-spacing: 1px;
-    }
+  }
 
-    .y_options {
-      font-size: 12px;
-      margin-left: 55px;
-    }
+  .y_options {
+    font-size: 12px;
+    margin-left: 55px;
+  }
 
-    .y_options::before,
-    .y_options::after {
-      width: 40px;
-    }
+  .y_options::before,
+  .y_options::after {
+    width: 40px;
+  }
 
-    .y_options::before {
-      margin: 8px 0 0 -55px;
-    }
+  .y_options::before {
+    top: 9px;
+    left: -55px;
+  }
 
-    .y_options::after {
-      margin: -10px 0 20px 155px;
-    }
+  .y_options::after {
+    top: -10px;
+    right: -155px;
+  }
 
+}
+
+@media screen and (min-width: 768px) {
+  .y_banner {
+    z-index: 0;
+    position: relative;
+  }
+  .y_welcome {
+    max-width: unset;
   }
 
   .y_banner_pic {
@@ -141,13 +175,13 @@
     }
 
     .y_options::before {
-      margin: 15px 0 0 -55px;
+      top: 16px;
     }
 
     .y_options::after {
-      margin: -15px 0 20px 245px;
+      top: -16px;
+      right: -255px
     }
-
 
   }
 }
