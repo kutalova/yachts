@@ -21,16 +21,15 @@
 }
 
 .y_form_group {
-  width: 266px;
+  width: 205px;
 }
 
 .calendar {
-  background: url('/assets/images/icons/calendar_2.svg') $white no-repeat;
+  background: url('/assets/images/icons/calendar_2.svg') $white no-repeat 1px;
   background-size: 26px 26px;
-  background-position: 21px;
   border: 1px solid $grey-light;
   border-right: none;
-  width: 67px;
+  width: 30px;
 }
 
 .place_wrapper {
@@ -54,14 +53,27 @@
   font-size: 14px;
   color: $grey-light;
   height: 40px;
-  width: 200px;
+  width: 80%;
   padding: 6px 0;
 }
 
 @media screen and (min-width: 768px) {
+
   .date_picker_wrapper {
     width: 340px;
     height: 276px;
     padding: 38px;
   }
+
+  .y_form_group {
+    width: 266px;
+  }
+  .calendar {
+    width: 67px;
+    background-position: 21px;
+  }
+  .date-picker_input {
+    width: 195px;
+  }
+
 }

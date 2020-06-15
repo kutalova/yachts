@@ -14,15 +14,21 @@ $navbar-dark-color: $primary;
   font-family: Roboto, Arial, sans-serif;
 }
 
+.ngx-gallery {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.ngx-gallery-thumbnails {
+  .ngx-gallery-thumbnail {
+    border: none !important;
+  }
+}
 h2 {
   font-size: 14px;
   margin: 20px 0;
 }
 
-.ngx-gallery {
-  display: inline-block;
-  margin-bottom: 20px;
-}
 
 @media screen and (min-width: 768px) {
   h2 {

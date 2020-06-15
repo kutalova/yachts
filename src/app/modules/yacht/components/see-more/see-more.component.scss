@@ -1,0 +1,41 @@
+.y_yachts_slider_wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  max-width: 1083px;
+  &::before,
+  &::after {
+    content: "";
+    width: 15px;
+    height: 18px;
+    position: relative;
+    background: url(/assets/images/icons/arrow_blue.svg) no-repeat;
+    top: 75px;
+  }
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .y_yachts_slider_wrapper {
+    &::before,
+    &::after {
+      top: 135px;
+      width: 33px;
+      height: 44px;
+      background-size: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .y_yachts_slider_wrapper {
+    &::before,
+    &::after {
+      top: 155px;
+      width: 33px;
+      height: 44px;
+      background-size: 30px;
+    }
+  }
+}

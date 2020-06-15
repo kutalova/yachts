@@ -8,5 +8,15 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1040px) {
+  .yacht_details {
+    max-width: 1266px;
+    margin: 0 auto;
+  }
+  .y_desktop_wrapper {
+    display: flex;
+    app-book-date-picker {
+      margin-left: 32px;
+    }
+  }
 }
