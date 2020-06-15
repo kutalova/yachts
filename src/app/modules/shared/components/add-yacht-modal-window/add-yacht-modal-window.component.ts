@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-add-yacht-modal-window',
@@ -7,8 +8,9 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./add-yacht-modal-window.component.scss', '../../styles/_forms.scss']
 })
 export class AddYachtModalWindowComponent implements OnInit {
-
-  constructor(private fb: FormBuilder) {
+  @Input() name;
+  constructor(private fb: FormBuilder,
+              public activeModal: NgbActiveModal) {
   }
 
   form: FormGroup = this.fb.group(

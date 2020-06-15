@@ -1,4 +1,7 @@
 <div class="book_window_wrapper">
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
   <p class="headline">Забронировать</p>
   <form [formGroup]="form" class="modal_window_form">
     <div class="form-group">

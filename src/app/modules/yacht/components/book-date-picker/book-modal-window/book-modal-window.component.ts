@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {NgbCalendar, NgbDate, NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+import {NgbActiveModal, NgbCalendar, NgbDate, NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-book-modal-window',
   templateUrl: './book-modal-window.component.html',
-  styleUrls: ['./book-modal-window.component.scss', '../../styles/_forms.scss']
+  styleUrls: ['./book-modal-window.component.scss', '../../../../shared/styles/_forms.scss']
 })
 export class BookModalWindowComponent implements OnInit {
 
@@ -15,7 +15,8 @@ export class BookModalWindowComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    calendar: NgbCalendar
+    calendar: NgbCalendar,
+    public activeModal: NgbActiveModal
   ) {
     this.fromDate = calendar.getToday();
     this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);

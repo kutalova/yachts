@@ -6,7 +6,6 @@ import {RouterModule} from '@angular/router';
 import {NgbDate, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {BookModalWindowComponent} from './components/book-modal-window/book-modal-window.component';
 import { AddYachtModalWindowComponent } from './components/add-yacht-modal-window/add-yacht-modal-window.component';
 
 
@@ -14,7 +13,6 @@ import { AddYachtModalWindowComponent } from './components/add-yacht-modal-windo
   declarations: [
     HeaderComponent,
     FooterComponent,
-    BookModalWindowComponent,
     AddYachtModalWindowComponent,
   ],
   imports: [
@@ -32,9 +30,10 @@ import { AddYachtModalWindowComponent } from './components/add-yacht-modal-windo
     NgbModule,
     NgxGalleryModule,
     ReactiveFormsModule,
-    BookModalWindowComponent,
     AddYachtModalWindowComponent,
-  ]
+  ],
+  bootstrap: [AddYachtModalWindowComponent],
+  entryComponents: [AddYachtModalWindowComponent]
 })
 export class SharedModule {
 }
