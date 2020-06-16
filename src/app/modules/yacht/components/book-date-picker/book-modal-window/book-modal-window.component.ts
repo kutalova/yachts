@@ -5,7 +5,7 @@ import {NgbActiveModal, NgbCalendar, NgbDate, NgbDateStruct} from '@ng-bootstrap
 @Component({
   selector: 'app-book-modal-window',
   templateUrl: './book-modal-window.component.html',
-  styleUrls: ['./book-modal-window.component.scss', '../../../../shared/styles/_forms.scss']
+  styleUrls: ['./book-modal-window.component.scss', '../../../../shared/styles/_forms.scss',  '../../../../shared/styles/_modal.scss']
 })
 export class BookModalWindowComponent implements OnInit {
 

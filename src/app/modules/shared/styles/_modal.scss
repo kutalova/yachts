@@ -1,0 +1,21 @@
+.book_window_wrapper {
+  width: 80%;
+  border-radius: 4px;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.close {
+  width: 25px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .book_window_wrapper {
+    width: 492px;
+    padding: 30px 40px;
+  }
+}

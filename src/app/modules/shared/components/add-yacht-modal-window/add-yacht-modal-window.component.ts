@@ -5,7 +5,7 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-add-yacht-modal-window',
   templateUrl: './add-yacht-modal-window.component.html',
-  styleUrls: ['./add-yacht-modal-window.component.scss', '../../styles/_forms.scss']
+  styleUrls: ['./add-yacht-modal-window.component.scss', '../../styles/_forms.scss', '../../styles/_modal.scss']
 })
 export class AddYachtModalWindowComponent implements OnInit {
   @Input() name;
